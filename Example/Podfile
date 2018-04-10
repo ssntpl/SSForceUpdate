@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SSForceUpdate_Example' do
+  pod 'SSForceUpdate', :path => '../'
+
+  target 'SSForceUpdate_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

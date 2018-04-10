@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FlightPlan.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>7E92C6E9752C57E856D601EFC104DE620049F6D1</string>
+				<key>dateExpires</key>
+				<string>28/09/18</string>
+				<key>type</key>
+				<string>iOS Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7E92C6E9752C57E856D601EFC104DE620049F6D1</string>
+						<key>dateExpires</key>
+						<string>28/09/18</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>AFNetworking.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>89P8W3MYUV</string>
+						<key>name</key>
+						<string>Blue Chap Group ApS</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7E92C6E9752C57E856D601EFC104DE620049F6D1</string>
+						<key>dateExpires</key>
+						<string>28/09/18</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>Appirater.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>89P8W3MYUV</string>
+						<key>name</key>
+						<string>Blue Chap Group ApS</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7E92C6E9752C57E856D601EFC104DE620049F6D1</string>
+						<key>dateExpires</key>
+						<string>28/09/18</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>CocoaLumberjack.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>89P8W3MYUV</string>
+						<key>name</key>
+						<string>Blue Chap Group ApS</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7E92C6E9752C57E856D601EFC104DE620049F6D1</string>
+						<key>dateExpires</key>
+						<string>28/09/18</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>FMDB.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>89P8W3MYUV</string>
+						<key>name</key>
+						<string>Blue Chap Group ApS</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7E92C6E9752C57E856D601EFC104DE620049F6D1</string>
+						<key>dateExpires</key>
+						<string>28/09/18</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>MBProgressHUD.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>89P8W3MYUV</string>
+						<key>name</key>
+						<string>Blue Chap Group ApS</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>armv7</string>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>7E92C6E9752C57E856D601EFC104DE620049F6D1</string>
+						<key>dateExpires</key>
+						<string>28/09/18</string>
+						<key>type</key>
+						<string>iOS Development</string>
+					</dict>
+					<key>name</key>
+					<string>ReaderFramework.framework</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>89P8W3MYUV</string>
+						<key>name</key>
+						<string>Blue Chap Group ApS</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>89P8W3MYUV.com.bluechap.FlightPlan</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>89P8W3MYUV</string>
+				<key>get-task-allow</key>
+				<true/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>89P8W3MYUV.com.bluechap.FlightPlan</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>FlightPlan.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>6e90de40-f789-4ee2-a107-5c30e5b3e848</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: com.bluechap.FlightPlan</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>89P8W3MYUV</string>
+				<key>name</key>
+				<string>Blue Chap Group ApS</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

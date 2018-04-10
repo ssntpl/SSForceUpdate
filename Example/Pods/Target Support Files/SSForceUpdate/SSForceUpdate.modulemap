@@ -1,0 +1,6 @@
+framework module SSForceUpdate {
+  umbrella header "SSForceUpdate-umbrella.h"
+
+  export *
+  module * { export * }
+}
