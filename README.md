@@ -1,6 +1,6 @@
 # SSForceUpdate
 
-[![CI Status](http://img.shields.io/travis/Abhishek Kumar/SSForceUpdate.svg?style=flat)](https://travis-ci.org/Abhishek Kumar/SSForceUpdate)
+#[![CI Status](http://img.shields.io/travis/Abhishek Kumar/SSForceUpdate.svg?style=flat)](https://travis-ci.org/Abhishek Kumar/SSForceUpdate)
 [![Version](https://img.shields.io/cocoapods/v/SSForceUpdate.svg?style=flat)](http://cocoapods.org/pods/SSForceUpdate)
 [![License](https://img.shields.io/cocoapods/l/SSForceUpdate.svg?style=flat)](http://cocoapods.org/pods/SSForceUpdate)
 [![Platform](https://img.shields.io/cocoapods/p/SSForceUpdate.svg?style=flat)](http://cocoapods.org/pods/SSForceUpdate)
@@ -22,7 +22,7 @@ pod 'SSForceUpdate'
 
 ## Author
 
-Abhishek Kumar, abhishek@ssntpl.com
+Abhishek Kr Singh, abhishekSSNTPL
 
 ## License
 
