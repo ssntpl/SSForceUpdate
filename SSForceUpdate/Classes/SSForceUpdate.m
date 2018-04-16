@@ -17,6 +17,7 @@ NSString * const SSForceUpdateNotificationPeriodInDays = @"notification_period_i
 
 @property (nonatomic, strong) NSDictionary <NSString *, id> *appData;
 @property (nonatomic, strong) NSDate *lastVersionCheckPerformedOnDate;
+@property (nonatomic, strong) NSString *itunesURL;
 @property (nonatomic, copy) NSString *appID;
 @property (nonatomic, copy) NSString *currentInstalledVersion;
 @property (nonatomic, copy) NSString *minimumStableVersion;
@@ -73,7 +74,8 @@ NSString * const SSForceUpdateNotificationPeriodInDays = @"notification_period_i
     }
 }
 
-- (void)checkVersionWithNotificationPeriod {
+- (void)checkVersionWithNotificationPeriod:(NSString*)url {
+    self.itunesURL = url;
     /*
      On app's first launch, lastVersionCheckPerformedOnDate isn't set.
      Avoid false-positive fulfilment of second condition in this method.
@@ -119,7 +121,7 @@ NSString * const SSForceUpdateNotificationPeriodInDays = @"notification_period_i
  }
  */
 - (void)performVersionCheck {
-    NSString *storeURLString = [NSString stringWithFormat:@"https://api.myjson.com/bins/186hh7"];
+    NSString *storeURLString = [NSString stringWithFormat:@"%@",self.itunesURL];
     NSURL *storeURL = [NSURL URLWithString:storeURLString]; //
   
     NSURLRequest *request = [NSMutableURLRequest requestWithURL:storeURL cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30.0];
