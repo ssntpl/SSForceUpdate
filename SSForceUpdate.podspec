@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SSForceUpdate'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SSForceUpdate.'
+  s.version          = '1.0.0'
+  s.summary          = 'Force the user to update the app before continuing to the app.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+SSForceUpdate checks a user's currently installed version of your iOS app against the latest version information stored in a JSON file on a server URL you provide.
                        DESC
 
-  s.homepage         = 'https://github.com/Abhishek Kumar/SSForceUpdate'
+  s.homepage         = 'https://ssntpl.com'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Abhishek Kumar' => 'abhishek@ssntpl.com' }
-  s.source           = { :git => 'https://github.com/Abhishek Kumar/SSForceUpdate.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/ssntpl/SSForceUpdate.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/ssntpl'
 
   s.ios.deployment_target = '8.0'
 

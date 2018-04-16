@@ -9,6 +9,23 @@
 #import "SSAppDelegate.h"
 #import "SSForceUpdate.h"
 
+// HOST_URL is the URL that contains the JSON where all the details must be stored related to the app that has been released to the appstore.
+/**
+ {
+ "results": {
+ "appID": 1301873090,
+ "currentVersionReleaseDate": "2018-02-07T03:18:02Z",
+ "minimumOSVersion": "9.0",
+ "minimumStableVersion": "1.0.0",
+ "version": "1.0.0",
+ "notificationPeriodInDays": 7,
+ "enable": true,
+ "force": true
+ }
+ }
+ */
+#define HOST_URL (@"https://api.myjson.com/bins/186hh7")
+
 @implementation SSAppDelegate
 
 
@@ -37,34 +54,18 @@
      By default, SSForceUpdate is configured to use SSForceUpdateAlertTypeOption */
   //  [[SSForceUpdate sharedInstance] setAlertType:SSForceUpdateAlertTypeOption];
     
-    /* (Optional) If your application is not available in the U.S. App Store, you must specify the two-letter
-     country code for the region in which your applicaiton is available. */
-    //    [[SSForceUpdate sharedInstance] setCountryCode:@"en-US"];
-    
-    /* (Optional) Overrides system language to predefined language.
-     Please use the SSForceUpdateLanguage constants defined in SSForceUpdate.h. */
-    //    [[SSForceUpdate sharedInstance] setForceLanguageLocalization:SSForceUpdateLanguageRussian];
-    
     // Turn on Debug statements
     [[SSForceUpdate sharedInstance] setDebugEnabled:true];
     
     // Perform check for new version of your app
   //  [[SSForceUpdate sharedInstance] checkVersion];
-    [[SSForceUpdate sharedInstance] checkVersionWithNotificationPeriod];
+    NSString *url = [NSString stringWithFormat:HOST_URL];
+    [[SSForceUpdate sharedInstance] checkVersionWithNotificationPeriod:url];
     return YES;
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    
-    /*
-     Perform daily check for new version of your app
-     Useful if user returns to you app from background after extended period of time
-     Place in applicationDidBecomeActive:
-     
-     Also, performs version check on first launch.
-     */
-    //    [[SSForceUpdate sharedInstance] checkVersionDaily];
     
     /*
      Perform weekly check for new version of your app
@@ -73,7 +74,8 @@
      
      Also, performs version check on first launch.
      */
-        [[SSForceUpdate sharedInstance] checkVersionWithNotificationPeriod];
+    NSString *url = [NSString stringWithFormat:HOST_URL];
+    [[SSForceUpdate sharedInstance] checkVersionWithNotificationPeriod:url];
     
 }
 
@@ -88,7 +90,6 @@
      
      Also, performs version check on first launch.
      */
-    //    [[SSForceUpdate sharedInstance] checkVersion];
 }
 
 #pragma mark - SSForceUpdateDelegate

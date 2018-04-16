@@ -125,7 +125,7 @@ typedef NS_ENUM(NSUInteger, SSForceUpdateAlertType)
  Useful if user returns to you app from background after extended period of time.
  Place in @c applicationDidBecomeActive:.
  */
-- (void)checkVersionWithNotificationPeriod;
+- (void)checkVersionWithNotificationPeriod:(NSString*)url;
 
 @end
 
